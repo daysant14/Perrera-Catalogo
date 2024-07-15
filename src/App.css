@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.lista-perros {
+    display: flex;
+    flex-direction: column; /* Mantener las cabeceras en columna */
+    padding: 100px;
+    background-color: black;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .perro-card img {
+    width: 500px; /* Ajusta el ancho deseado */
+    height: 500px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+    border-radius: 8px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  .lista-perros h2 {
+    display: flex;
+    padding: 10px 20px;
+    width: 17%; 
+    font-size: 40px;
+    box-shadow: 0 0 10px rgb(105, 97, 112); /* Efecto de neón en el borde */
+    border-radius: 10px; 
+    background-color: rgb(47, 44, 49);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    justify-content: center; /* Alinear el texto en el centro */
   }
-}
+
+  .lista-perros p {
+    font-size: 30px;
+    color: black;
+  }
+  
+  .perros-contenedor {
+    display: flex;
+    flex-direction: row; /* Alinear las tarjetas en fila */
+    flex-wrap: wrap; /* Permitir el ajuste de las tarjetas si es necesario */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  .perro-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .perro-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .perro-card h3 {
+    margin: 10px 0;
+  }
+  
+  .perro-card p {
+    margin: 5px 0;
+  }
+  
+  .perro-card button {
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: #151414;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 290px;
+    color:white ;
+    font-size: 20px;
+  } 
+
+  /* Otros estilos existentes */
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(47, 44, 49);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+  }
+  
+  

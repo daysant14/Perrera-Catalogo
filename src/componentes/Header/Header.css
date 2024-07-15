@@ -1,0 +1,153 @@
+.header {
+  display: flex; /* Usa Flexbox para alinear los elementos en una fila */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
+  width: 100%;
+  height: 20vh; /* Ajusta esta altura según tus necesidades */
+  overflow: hidden; /* Asegura que cualquier contenido adicional no se desborde */
+  position: relative;
+  padding-top: 3%; /* Espacio arriba del contenedor */
+  padding-bottom: 5%; /* Espacio abajo del contenedor */
+}
+
+.background-img {
+  width: 1947%;
+  height: 1080%;
+  object-fit:90%; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+/*Imagen del header*/
+.header img.background-img {
+  width: 100%;
+  height: 100%;
+  object-position: center; /* Centra la imagen dentro del contenedor */
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+
+}
+
+/*Icono*/
+.header .icono {
+  width: 90px; /* Ajusta el tamaño del icono */
+  height: auto; /* Mantiene la relación de aspecto del icono */
+  margin-left: 10px; /* Espacio entre el texto y el icono */
+  z-index: 2; /* Asegura que el icono esté encima de la imagen de fondo */
+  size: 70px;
+}
+
+/*Título*/
+.header h1 {
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  font-size: 100px; /* Ajusta el tamaño de la fuente según sea necesario */
+  color: white; /* Cambia el color del texto */
+  z-index: 2; /* Asegura que el texto esté encima de la imagen de fondo */
+}
+ 
+
+/*Botones*/
+.botones {
+  display: flex; /* Usa Flexbox para alinear los botones en fila */
+  gap: 10px; /* Espacio entre los botones */
+  z-index: 2;
+  margin-top: 30px; /* Espacio entre el texto y los botones */
+  padding-left: 50%;
+  margin-bottom: 300px; /* Reduce el espacio en la parte inferior, empujando el elemento hacia arriba */
+
+}
+
+.boton {
+  padding: 10px 20px; /* Ajusta el relleno del botón */
+  background-color: transparent; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 16px; /* Ajusta el tamaño del texto del botón */
+  flex: 1; /* Hace que los botones ocupen el mismo tamaño */
+  margin-top: 10px;
+  width: 300px; /* Ajusta el ancho de la imagen */
+  height: auto; /* Mantiene la relación de aspecto */
+  font-size: 25px;
+}
+
+.boton:hover {
+  background-color: rgb(105, 97, 112); /* Color de fondo cuando el botón es hovered */
+} 
+
+/*BREAKPOINTS*/
+
+@media (max-width: 768px) {
+  .header {
+    height: 15vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header .icono {
+    width: 20px;
+  }
+
+  .botones {
+    
+    gap: 5px;
+    margin-top:20px;
+    align-items: center;
+    margin-bottom: 3%;/*Mueve el elemento hacia arriba*/
+    padding-left: 0;
+    font-size: 20px;
+    padding-left: 4%;
+  
+  }
+
+  .boton {
+    width: 80%;
+    font-size: 15px;
+    padding: 1px;
+   
+  }
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .header {
+    height: 10vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .header h1 {
+    font-size: 12px;
+  }
+
+  .header .icono {
+    width: 20px;
+  }
+
+  .botones {
+    
+    gap: 5px;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 4%;/*Mueve el elemento hacia arriba*/
+    padding-left: 0;
+    font-size: 12px;
+    padding-left: 5%;
+  
+  }
+
+  .boton {
+    width: 80%;
+    font-size: 12px;
+    padding: 1px;
+   
+  }
+} 
+
+

@@ -1,0 +1,107 @@
+/* Formulario.css */
+.formulario-perro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Asegura que el formulario esté encima de otros elementos */
+    /*font-family: Arial, sans-serif;*/
+    color: white; /* Color de la letra por defecto */
+    font-size: 30px;
+  }
+  
+  .formulario-content {
+    background: rgb(10, 10, 10);
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    width: 900px;
+    height: 870px;
+    position: relative; /* Necesario para posicionar el botón de cerrar */
+    border-radius: 9px solid rgb(105, 97, 112); /* Borde sólido de 2px con color gris neón */
+    box-shadow: 0 0 100px rgb(105, 97, 112); /* Efecto de neón en el borde */
+  }
+  
+  /*Titulo*/
+  .formulario-content h2{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 200px; /* Aumenta el tamaño del ícono */
+    color: white;
+    cursor: pointer;
+    width: 70px;  /* Aumenta el ancho del botón */
+    height: 50px; /* Aumenta la altura del botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  
+
+  /*Botones*/
+   .botonesFormulario{
+    display: flex;
+    gap:3%;
+    justify-content: center;
+
+    }
+    .botonFormulario {
+        padding: 10px 20px; /* Relleno del botón */
+        width: 250px; /* Ajusta el ancho del botón */
+        height: auto; /* Mantiene la relación de aspecto */
+        border-radius: 56px;
+        background-color: white;
+        font-size: 20px;
+        z-index: 1;
+        border: none; /* Esta línea  asegura  que no haya bordes */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      }
+      
+      /* Cambia el nombre de la clase para que coincida */
+      .botonFormulario:hover {
+        background-color: rgb(105, 97, 112); /* Color de fondo cuando el botón es hovered */
+        color: white; /* Cambia el color del texto cuando el botón es hovered */
+        z-index: 2;
+      }
+      
+
+
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Calibri';
+  }
+  
+  form input {
+    width: calc(100% - 20px); /* Ajuste para evitar desbordamiento */
+    padding: 20px 20px; /* Relleno del botón */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid rgb(105, 97, 112); /* Borde sólido de 2px con color gris neón */
+    box-shadow: 0 0 10px rgb(105, 97, 112); /* Efecto de neón en el borde */
+    border-radius: 10px; 
+    background-color: rgb(105, 97, 112);
+    font-size: 25px;
+  
+ 
+
+  }
+  
+
+  

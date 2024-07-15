@@ -1,0 +1,23 @@
+.lista-opciones{
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Calibri';
+    margin-bottom: 8px;
+  
+
+} 
+
+
+
+.lista-opciones select{
+    width:100%;
+    background-color:rgb(105, 97, 112);
+    padding: 20px 20px; /* Relleno del botón */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-right: 0;
+    border-radius: 10px; 
+    font-size: 20px;
+    box-shadow: 0 0 10px rgb(105, 97, 112); /* Efecto de neón en el borde */
+}
